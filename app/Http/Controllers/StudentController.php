@@ -10,7 +10,6 @@ use Illuminate\Http\Request;
 use Faker\Factory as Faker;
 use Illuminate\Support\Facades\Auth;
 
-use function PHPSTORM_META\map;
 
 class StudentController extends Controller
 {

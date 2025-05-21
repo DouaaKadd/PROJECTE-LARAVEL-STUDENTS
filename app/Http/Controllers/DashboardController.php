@@ -21,7 +21,7 @@ class DashboardController extends Controller
         $totalModuls = Modul::count();// Total de cicles amb el count
 
         // Obtener todos los ciclos formativos
-        $cicles = Cicle::with('moduls')->get();
+        $cicles = Cicle::with('moduls')->get(); 
         $moduls = Modul::all(); //Obtenim tots els moduls
         $ultimsEstudiants = Student::latest()->take(5)->get(); //Amb la funcio latest() agafem els 5 últims estudiants creats 
         //Consultat a -> https://laravel.com/docs/12.x/queries#limit-and-offset
@@ -48,8 +48,7 @@ class DashboardController extends Controller
             'totalModuls',
             'modulsMatriculats'
         ));
-
-
+        
         }
     }
 

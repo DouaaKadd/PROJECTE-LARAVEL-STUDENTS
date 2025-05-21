@@ -61,7 +61,6 @@
                         </td>
                         <td>{{ $student->created_at->format('d/m/Y') }}</td> {{--Consultado en : https://laravel.com/docs/12.x/eloquent-mutators#date-casting--}} 
                     
-
                     </tr>
                 @endforeach
             </tbody>
@@ -167,7 +166,7 @@
                         Afegir un nou Mòdul
                     </a>
                 </div>
-    @else
+    @else {{--ESTUDIANTEE--}}
 
         <h1 class="mb-4">Benvingut/da, {{ Auth::user()->name }}</h1>
 
